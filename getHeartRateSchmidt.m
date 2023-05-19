@@ -71,8 +71,8 @@ y=homomorphic_envelope-mean(homomorphic_envelope);
 signal_autocorrelation = c(length(homomorphic_envelope)+1:end);
 
 min_index = 0.5*Fs;
-max_index = 2*Fs;
-
+max_index = min([2*Fs, numel(signal_autocorrelation)]);
+fprintf('max_index = %d\n', max_index);
 [~, index] = max(signal_autocorrelation(min_index:max_index));
 true_index = index+min_index-1;
 

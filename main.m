@@ -1,6 +1,6 @@
 % Specify the folders containing the .wav files
-folderList = {'PhysioNet/training/training-a', 'PhysioNet/training/training-b', 'PhysioNet/training/training-c', 'PhysioNet/training/training-d', 'PhysioNet/training/training-e', 'PhysioNet/training/training-f'};
-
+% folderList = {'PhysioNet/training/training-a', 'PhysioNet/training/training-b', 'PhysioNet/training/training-c', 'PhysioNet/training/training-d', 'PhysioNet/training/training-e', 'PhysioNet/training/training-f'};
+folderList = {'PASCAL/abnormal', 'PASCAL/normal'};
 % Loop through each folder
 for j = 1:length(folderList)
     % Get a list of all .wav files in the folder
